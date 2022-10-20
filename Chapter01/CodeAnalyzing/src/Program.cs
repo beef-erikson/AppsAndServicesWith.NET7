@@ -5,6 +5,7 @@
 namespace CodeAnalyzing.src;
 
 using System.Diagnostics;
+using static System.Console;
 
 /// <summary>
 /// The main class for this console app.
@@ -19,6 +20,13 @@ public class Program
     /// </param>
     public static void Main(string[] args)
     {
-        Debug.WriteLine("Hello, Debugger!");
+        string csharp11 = """
+        {
+            "firstName": "Bob",
+            "lastName": "Smith"
+        }
+        """;
+
+        WriteLine($"{csharp11}");
     }
 }
