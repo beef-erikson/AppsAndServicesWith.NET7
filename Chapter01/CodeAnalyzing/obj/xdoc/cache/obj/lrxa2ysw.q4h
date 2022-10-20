@@ -1,0 +1,169 @@
+id: CodeAnalyzing
+language: CSharp
+name:
+  Default: CodeAnalyzing
+qualifiedName:
+  Default: CodeAnalyzing
+type: Assembly
+modifiers: {}
+items:
+- id: CodeAnalyzing
+  commentId: N:CodeAnalyzing
+  language: CSharp
+  name:
+    CSharp: CodeAnalyzing
+    VB: CodeAnalyzing
+  nameWithType:
+    CSharp: CodeAnalyzing
+    VB: CodeAnalyzing
+  qualifiedName:
+    CSharp: CodeAnalyzing
+    VB: CodeAnalyzing
+  type: Namespace
+  assemblies:
+  - CodeAnalyzing
+  modifiers: {}
+  items:
+  - id: CodeAnalyzing.Program
+    commentId: T:CodeAnalyzing.Program
+    language: CSharp
+    name:
+      CSharp: Program
+      VB: Program
+    nameWithType:
+      CSharp: Program
+      VB: Program
+    qualifiedName:
+      CSharp: CodeAnalyzing.Program
+      VB: CodeAnalyzing.Program
+    type: Class
+    assemblies:
+    - CodeAnalyzing
+    namespace: CodeAnalyzing
+    source:
+      remote:
+        path: C:/Users/beef_/Desktop/review book/Chapter01/CodeAnalyzing/Program.cs
+      id: Program
+      path: ../CodeAnalyzing/Program.cs
+      startLine: 10
+    summary: "\nThe main class for this console app.\n"
+    example: []
+    syntax:
+      content:
+        CSharp: 'public class Program : object'
+        VB: >-
+          Public Class Program
+
+              Inherits Object
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: CodeAnalyzing.Program.Main(System.String[])
+      commentId: M:CodeAnalyzing.Program.Main(System.String[])
+      language: CSharp
+      name:
+        CSharp: Main(String[])
+        VB: Main(String())
+      nameWithType:
+        CSharp: Program.Main(String[])
+        VB: Program.Main(String())
+      qualifiedName:
+        CSharp: CodeAnalyzing.Program.Main(System.String[])
+        VB: CodeAnalyzing.Program.Main(System.String())
+      type: Method
+      assemblies:
+      - CodeAnalyzing
+      namespace: CodeAnalyzing
+      source:
+        remote:
+          path: C:/Users/beef_/Desktop/review book/Chapter01/CodeAnalyzing/Program.cs
+        id: Main
+        path: ../CodeAnalyzing/Program.cs
+        startLine: 18
+      summary: "\nThe main entry point for this console app.\n"
+      example: []
+      syntax:
+        content:
+          CSharp: public static void Main(string[] args)
+          VB: Public Shared Sub Main(args As String())
+        parameters:
+        - id: args
+          type: System.String[]
+          description: "\nA string array of arguments passed to the console app.\n"
+      overload: CodeAnalyzing.Program.Main*
+      modifiers:
+        CSharp:
+        - public
+        - static
+        VB:
+        - Public
+        - Shared
+references:
+  System.String[]:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: '[]'
+        nameWithType: '[]'
+        qualifiedName: '[]'
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: ()
+        nameWithType: ()
+        qualifiedName: ()
+    isDefinition: false
+  CodeAnalyzing.Program.Main*:
+    name:
+      CSharp:
+      - id: CodeAnalyzing.Program.Main*
+        name: Main
+        nameWithType: Program.Main
+        qualifiedName: CodeAnalyzing.Program.Main
+      VB:
+      - id: CodeAnalyzing.Program.Main*
+        name: Main
+        nameWithType: Program.Main
+        qualifiedName: CodeAnalyzing.Program.Main
+    isDefinition: true
+    commentId: Overload:CodeAnalyzing.Program.Main
+  CodeAnalyzing.Program:
+    name:
+      CSharp:
+      - id: CodeAnalyzing.Program
+        name: Program
+        nameWithType: Program
+        qualifiedName: CodeAnalyzing.Program
+      VB:
+      - id: CodeAnalyzing.Program
+        name: Program
+        nameWithType: Program
+        qualifiedName: CodeAnalyzing.Program
+    isDefinition: true
+    commentId: T:CodeAnalyzing.Program
+  CodeAnalyzing:
+    name:
+      CSharp:
+      - name: CodeAnalyzing
+        nameWithType: CodeAnalyzing
+        qualifiedName: CodeAnalyzing
+      VB:
+      - name: CodeAnalyzing
+        nameWithType: CodeAnalyzing
+        qualifiedName: CodeAnalyzing
+    isDefinition: true
+    commentId: N:CodeAnalyzing

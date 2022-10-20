@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "eT62R1kHbhTlf5EHLraGNblTHYvOwU0rGFc+liV2vB23jDp4Tv2ZIxKDzrAiNZcoJNUU6ZiFWI1GkmA8zJPT6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\beef_\\Desktop\\review book\\Chapter01\\CodeAnalyzing\\CodeAnalyzing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\beef_\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}

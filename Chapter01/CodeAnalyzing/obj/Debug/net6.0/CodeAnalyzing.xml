@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeAnalyzing</name>
+    </assembly>
+    <members>
+        <member name="T:CodeAnalyzing.src.Program">
+            <summary>
+            The main class for this console app.
+            </summary>
+        </member>
+        <member name="M:CodeAnalyzing.src.Program.Main(System.String[])">
+            <summary>
+            The main entry point for this console app.
+            </summary>
+            <param name="args">
+            A string array of arguments passed to the console app.
+            </param>
+        </member>
+    </members>
+</doc>
