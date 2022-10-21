@@ -1,6 +1,7 @@
 ﻿// <copyright file="Program.cs" company="Beef Erikson Studios">
 // Copyright (c) Beef Erikson Studios. All rights reserved.
 // </copyright>
+using System.Data;
 using Microsoft.Data.SqlClient;
 
 namespace Northwind.Console.SqlClient;
@@ -16,6 +17,7 @@ internal partial class Program
     /// <param name="args">command-line arguments.</param>
     internal static void Main(string[] args)
     {
+        // Sets builder and parameters.
         SqlConnectionStringBuilder builder = new ();
 
         builder.InitialCatalog = "Northwind";
@@ -24,6 +26,7 @@ internal partial class Program
         builder.TrustServerCertificate = true;
         builder.ConnectTimeout = 10;
 
+        // Welcome screen.
         WriteLine("Connect to:");
         WriteLine("  1 - SQL Server on local machine");
         WriteLine("  2 - Azure SQL Database");
@@ -35,6 +38,7 @@ internal partial class Program
         WriteLine();
         WriteLine();
 
+        // Key has been hit.
         if (key is ConsoleKey.D1 or ConsoleKey.NumPad1)
         {
             builder.DataSource = "."; // local SQL server
@@ -53,6 +57,7 @@ internal partial class Program
             return;
         }
 
+        // Authenticate screen.
         WriteLine("Authenticate using:");
         WriteLine("  1 - Windows Integrated Security");
         WriteLine("  2 - SQL Login, for example, sa");
@@ -63,9 +68,10 @@ internal partial class Program
         WriteLine();
         WriteLine();
 
+        // Key has been hit.
         if (key is ConsoleKey.D1 or ConsoleKey.NumPad1)
         {
-            builder.IntegratedSecurity = true;
+            builder.IntegratedSecurity = true; // Windows Integrated Security
         }
         else if (key is ConsoleKey.D2 or ConsoleKey.NumPad2)
         {
@@ -88,14 +94,17 @@ internal partial class Program
             return;
         }
 
+        // Initialize conntection.
         SqlConnection connection = new (builder.ConnectionString);
 
         WriteLine(connection.ConnectionString);
         WriteLine();
 
+        // Change state and display info message.
         connection.StateChange += Connection_StateChange;
         connection.InfoMessage += Connection_InfoMessage;
 
+        // Open connection.
         try
         {
             WriteLine(
@@ -113,6 +122,32 @@ internal partial class Program
             WriteLine($"SQL exception: {ex.Message}");
         }
 
+        // Selects ID, name and price from products table.
+        SqlCommand cmd = connection.CreateCommand();
+
+        cmd.CommandType = CommandType.Text;
+        cmd.CommandText = "SELECT ProductId, ProductName, UnitPrice FROM Products";
+
+        SqlDataReader reader = cmd.ExecuteReader();
+
+        // Print output.
+        WriteLine("----------------------------------------------------------");
+        WriteLine("| {0,5} | {1,-35} | {2,8} |", "Id", "Name", "Price");
+        WriteLine("----------------------------------------------------------");
+
+        while (reader.Read())
+        {
+            WriteLine(
+                "| {0,5} | {1,-35} | {2,8:C} |",
+                reader.GetInt32("ProductID"),
+                reader.GetString("ProductName"),
+                reader.GetDecimal("UnitPrice"));
+        }
+
+        WriteLine("----------------------------------------------------------");
+
+        // Clear resources.
+        reader.Close();
         connection.Close();
     }
 }
