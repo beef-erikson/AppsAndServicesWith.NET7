@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UbSEoKRY8gyH6aiKOML+XHDlWRQb3q6LKk6F4cEetZCbUgPGx9sw0q/9hph4xasTiOi3E3sGJUJawAbq2TfLJQ==",
+  "dgSpecHash": "UrU4HC8efPJg+rP+mE4SAmK1fG4fVjBtkJpPKsLKuq7Jk+iL98RxoUBFosNe/ch/m8aFR2CgwMrJOJ6wDfyXww==",
   "success": true,
   "projectFilePath": "C:\\Users\\beef_\\Desktop\\review book\\Chapter01\\CodeAnalyzing\\CodeAnalyzing.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\beef_\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
