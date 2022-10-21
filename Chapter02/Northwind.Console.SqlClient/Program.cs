@@ -122,11 +122,23 @@ internal partial class Program
             WriteLine($"SQL exception: {ex.Message}");
         }
 
+        // Filter out by unit price.
+        Write("Enter a unit price: ");
+        string? priceText = ReadLine();
+
+        if (!decimal.TryParse(priceText, out decimal price))
+        {
+            WriteLine("You must enter a valid unit price.");
+            return;
+        }
+
         // Selects ID, name and price from products table.
         SqlCommand cmd = connection.CreateCommand();
 
         cmd.CommandType = CommandType.Text;
-        cmd.CommandText = "SELECT ProductId, ProductName, UnitPrice FROM Products";
+        cmd.CommandText = "SELECT ProductId, ProductName, UnitPrice FROM Products" +
+            " WHERE UnitPrice > @price";
+        cmd.Parameters.AddWithValue("price", price);
 
         SqlDataReader reader = cmd.ExecuteReader();
 
