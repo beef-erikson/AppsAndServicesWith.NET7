@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hIWSNcR5A3ehhnhqFsVsKLLt4CTRrt6pJf2JumKM99pfQG8r2/zEQhUWaIWNTfATvodvENwWX8LjZCKWlKhWZA==",
+  "dgSpecHash": "il2hsOVgkl5pwzEIK/rQKUdqUG0foMj/43v5xWwUB+EabwycLoP9qKMPbIay24UpO4rlQctHLAyZS9m1Kek1KQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\beef_\\Desktop\\review book\\Chapter02\\Northwind.Console.SqlClient\\Northwind.Console.SqlClient.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,6 @@
     "C:\\Users\\beef_\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\beef_\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\beef_\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\beef_\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512",
     "C:\\Users\\beef_\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\beef_\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "C:\\Users\\beef_\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
