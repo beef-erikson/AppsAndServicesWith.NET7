@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Console.SqlClient
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Console.EFCore", "Northwind.Console.EFCore\Northwind.Console.EFCore.csproj", "{15A5D225-5111-42F7-9E76-D0AECA91A3A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Console.HierarchyMapping", "Northwind.Console.HierarchyMapping\Northwind.Console.HierarchyMapping.csproj", "{A183A78F-6CD8-4EB6-BEA8-9B6F020BFABD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Console.HierarchyMapping", "Northwind.Console.HierarchyMapping\Northwind.Console.HierarchyMapping.csproj", "{A183A78F-6CD8-4EB6-BEA8-9B6F020BFABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.EntityModels.SqlServer", "Northwind.Common.EntityModels.SqlServer\Northwind.Common.EntityModels.SqlServer.csproj", "{7089AFDE-EB7E-4510-81DA-65078590227C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.SqlServer", "Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{AAB36544-0B9B-4090-8A53-EE7C57D03884}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{A183A78F-6CD8-4EB6-BEA8-9B6F020BFABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A183A78F-6CD8-4EB6-BEA8-9B6F020BFABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A183A78F-6CD8-4EB6-BEA8-9B6F020BFABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7089AFDE-EB7E-4510-81DA-65078590227C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7089AFDE-EB7E-4510-81DA-65078590227C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7089AFDE-EB7E-4510-81DA-65078590227C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7089AFDE-EB7E-4510-81DA-65078590227C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB36544-0B9B-4090-8A53-EE7C57D03884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB36544-0B9B-4090-8A53-EE7C57D03884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB36544-0B9B-4090-8A53-EE7C57D03884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB36544-0B9B-4090-8A53-EE7C57D03884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
